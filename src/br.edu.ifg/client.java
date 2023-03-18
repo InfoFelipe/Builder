@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class client {
+public class Client {
     String tipoSenha;
     Number quantCaracter;
 
