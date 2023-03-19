@@ -8,10 +8,10 @@ import br.edu.ifg.Interfaces.ISenha;
 
 public class Alfanumerica implements ISenha{
 
-    private String[] senhaFinal;
+    private ArrayList<String> senhaFinal;
 
     @Override
-    public String[] getSenha() {
+    public ArrayList<String> getSenha() {
         return this.senhaFinal;
         
     }
@@ -39,7 +39,12 @@ public class Alfanumerica implements ISenha{
             numerosSelecionado.add(num);
             senhaFinal.add(caracteres.get(num));
         }
-        
+
+        this.setSenhaFinal(senhaFinal);
+    }
+
+    public void setSenhaFinal(ArrayList<String> senhaFinal) {
+        this.senhaFinal = senhaFinal;
     }
     
 }
