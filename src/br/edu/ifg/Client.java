@@ -10,7 +10,7 @@ public class Client {
 
     public void definirTipoSenha(){
 
-        System.out.println("\nDigite o tipo de senha que deseja gerar: ");
+        System.out.println("\nDigite o número da senha que deseja gerar: ");
         tipoSenha = reader.nextLine();
 
     }

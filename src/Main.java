@@ -12,6 +12,10 @@ public class Main {
        director = new Director();       
        tipoSenha = director.organizarProducao();
 
+       while(tipoSenha.equals("alfanumerica")){
+
+       }
+
        if(tipoSenha.equals("alfanumerica")){
             senhaFinal = director.getAlfanumerica().getSenha();
 
